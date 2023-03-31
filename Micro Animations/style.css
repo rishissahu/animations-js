@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(260deg, #6a9eec, #65c0d3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 5rem;
+  
+}
+
+.home, .messages, .notification  {
+  display: flex;
+  align-items: center;
+  color: black;
+  padding: 2rem;
+}
+h2 {
+  margin-left: 1rem;
+}
