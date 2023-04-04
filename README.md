@@ -30,6 +30,10 @@ Text-Animation is a simple project that demonstrates how to create text reveal a
 
 Micro Animations is a collection of small, lightweight animations designed to enhance user experience on web pages and applications. These animations, built using HTML, CSS, and JavaScript, are simple yet effective, adding a touch of interactivity and delight to even the most basic interfaces. With this project, you can learn how to create animations that respond to user actions, provide feedback, and bring your designs to life. Check out the live demo to see Micro Animations in action, and feel free to use them in your own projects to create a more engaging and memorable user experience.
 
+**Project 4: Form Animations**
+
+Form animation is a simple and lightweight animation design can be used to create signup and signin page, this will enhance the user experience. This project is built using HTML, CSS, and JavaScript. In this project, you can learn how to create animations that respond to user actions, provide feedback, and bring your designs to life. Check out the live demo to see Form Animations in action, and feel free to use them in your own projects to create a more engaging and memorable user experience.
+
 **<h3>Contributing</h3>**
 
 Contributions to these animation projects are welcome and encouraged! If you have an idea for a new project or an improvement to an existing one, please feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
