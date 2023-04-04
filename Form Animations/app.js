@@ -1,5 +1,5 @@
 const containers = document.querySelectorAll('.input-container')
-const form = document.querySelector('.form')
+const form = document.querySelector('form')
 const tl = gsap.timeline({ default: { duration: 1 } })
 
 const start = "M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512"
@@ -12,7 +12,19 @@ containers.forEach(container => {
         if (!input.value) {
             tl.fromTo(line, { attr: { d: start } }, { attr: { d: end }, ease: "", duration: 0.75 })
             tl.to(line, { attr: { d: start }, ease: "elastic.out(1.5,0.3)", duration: 1 })
-            tl.to(palceholder, {top:-15, duration:.1, scale:.7, ease:'Power2.easeOut'}, '<15%')
+            tl.to(palceholder, { top: -15, duration: .1, scale: .7, ease: 'Power2.easeOut' }, '<15%')
         }
     })
 })
+
+document.addEventListener("click", ()=>{
+    containers.forEach(container => {
+        const palceholder = container.querySelector('.placeholder')
+        const input = container.querySelector('.input')
+        if(document.activeElement != input){
+            if(!input.value){
+                gsap.to(palceholder, {top:0, scale:1, duration:.2})
+            }
+        }
+    })
+})  
