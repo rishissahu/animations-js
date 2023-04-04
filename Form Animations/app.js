@@ -11,7 +11,8 @@ containers.forEach(container => {
     input.addEventListener('focus', () => {
         if (!input.value) {
             tl.fromTo(line, { attr: { d: start } }, { attr: { d: end }, ease: "", duration: 0.75 })
-            tl.to(line, { attr: { d: start }, ease: "elastic.out(1.5,0.3)", duration:1})
+            tl.to(line, { attr: { d: start }, ease: "elastic.out(1.5,0.3)", duration: 1 })
+            tl.to(palceholder, {top:-15, duration:.1, scale:.7, ease:'Power2.easeOut'}, '<15%')
         }
     })
 })
