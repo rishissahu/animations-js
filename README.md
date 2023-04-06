@@ -34,6 +34,8 @@ Micro Animations is a collection of small, lightweight animations designed to en
 
 Form animation is a simple and lightweight animation design can be used to create signup and signin page, this will enhance the user experience. This project is built using HTML, CSS, and JavaScript. In this project, you can learn how to create animations that respond to user actions, provide feedback, and bring your designs to life. Check out the live demo to see Form Animations in action, and feel free to use them in your own projects to create a more engaging and memorable user experience.
 
+**Project 5: Page Animation**
+
 **<h3>Contributing</h3>**
 
 Contributions to these animation projects are welcome and encouraged! If you have an idea for a new project or an improvement to an existing one, please feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
