@@ -36,6 +36,8 @@ Form animation is a simple and lightweight animation design can be used to creat
 
 **Project 5: Page Animation**
 
+This webpage features an animation that appears during page transitions. This animation is created using a combination of JavaScript, HTML, and CSS. When a user navigates to a new page on your website, the animation is triggered and provides a visual effect that enhances the overall user experience. The specifics of the animation, such as its duration, speed, and design, will depend on your specific implementation. However, the end result is a more engaging and dynamic website that captures users' attention and keeps them coming back for more.
+
 **<h3>Contributing</h3>**
 
 Contributions to these animation projects are welcome and encouraged! If you have an idea for a new project or an improvement to an existing one, please feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
