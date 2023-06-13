@@ -6,12 +6,18 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.handbag-body{
+    overflow: hidden;
+}
 
 nav {
     min-height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+nav img{
+    cursor: pointer;
 }
 
 .logo {
@@ -93,4 +99,5 @@ nav img {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
