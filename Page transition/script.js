@@ -26,7 +26,7 @@ const enterAnimation = (current, ) => {
         tlEnter.fromTo(arrow, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }),
         tlEnter.fromTo(product, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, "<"),
         tlEnter.fromTo(text, { opacity: 0 }, { opacity: 1}, "<"),
-        tlEnter.fromTo(circles, { opacity: 0 }, { opacity: 1 }, "<")
+        tlEnter.fromTo(circles, { opacity: 0 }, { opacity: 1, stagger:.15 }, "<")
     );
 };
 
