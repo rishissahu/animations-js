@@ -113,3 +113,39 @@ nav img {
     bottom: 10%;
     cursor: pointer;
 }
+
+/* products page */
+.product-nav{
+    min-height: 10vh;
+}
+
+.product-gallery{
+    padding: 0.5rem 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.product-section{
+    background-color: rgb(255, 255, 255);
+    
+}
+.product-des{
+    padding: 5% 15%;
+}
+.card{
+    margin: 1rem;
+    overflow: hidden;
+}
+.product-img{
+    border-radius: .8rem;
+    width: 100%;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price img{
+    height: 1.5rem;
+}
