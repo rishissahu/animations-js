@@ -16,7 +16,7 @@ const leaveAnimation = (current, done) => {
     );
 };
 
-const enterAnimation = (current, ) => {
+const enterAnimation = (current,) => {
     const product = current.querySelector('.image-container');
     const text = current.querySelector('.showcase-text');
     const circles = current.querySelectorAll('.circle');
@@ -25,11 +25,14 @@ const enterAnimation = (current, ) => {
     return (
         tlEnter.fromTo(arrow, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }),
         tlEnter.fromTo(product, { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, "<"),
-        tlEnter.fromTo(text, { opacity: 0 }, { opacity: 1}, "<"),
-        tlEnter.fromTo(circles, { opacity: 0 }, { opacity: 1, stagger:.15 }, "<")
+        tlEnter.fromTo(text, { opacity: 0 }, { opacity: 1 }, "<"),
+        tlEnter.fromTo(circles, { opacity: 0 }, { opacity: 1, stagger: .15 }, "<")
     );
 };
 
+function productEnterAnimation(next, done) {
+    tlEnter.fromTo(next, { y: '100%' }, { y: "0%" })
+}
 
 //animations using barba
 barba.init({
@@ -44,6 +47,16 @@ barba.init({
         enter(data) {
             let next = data.next.container
             enterAnimation(next)
+        }
+    },
+    {
+        name: 'product-transition',
+        from: { namespace: ['handbag'] },
+        to: { namespace: ['product'] },
+        enter(data) {
+            const done = this.async();
+            let next = data.next.container
+            productEnterAnimation(next, done)
         }
     }]
 });
